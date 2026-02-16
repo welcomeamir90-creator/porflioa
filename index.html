@@ -1,344 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body class="body-backgorund">
-    <nav id="desktop-nav">
-      <div class="logo">Amir Hamja</div>
-      <div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mehadi</title>
+
+    <!-- Importing Google Fonts -->
+    <!-- 'Caveat' for Logo/Handwriting, 'Poppins' for Menu, 'Hind Siliguri' for Bengali -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons (WhatsApp, Chart) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- 1. Header / Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">Drew Mahadi</a>
+        
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" class="has-dropdown">Courses</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Master Class</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Amir</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Amir Hamja</h1>
-        <p class="section__text__p2">Video Editor</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="/assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href=location."
-          />
 
+        <a href="#" class="auth-link">Register / Login</a>
+    </header>
 
-          <a href="https://www.linkedin.com/in/md-amir-b872a4371/">
-            <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-           
-          /></a>
-          
+    <!-- 2. Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            
+            <!-- Left Side Content -->
+            <div class="hero-text">
+                <div class="badge">
+                    <i class="fa-solid fa-chart-line" style="color: #ff6b6b;"></i> 
+                    ENHANCE YOUR CAREER
+                </div>
+                
+                <h1>
+                    <span class="highlight-yellow">লাইভ ব্যাচে এনরোল</span> <br>
+                    করার সুযোগ।
+                </h1>
+                
+                <p>
+                    ভিডিও এডিটিংয়ের বেসিক থেকে অ্যাডভান্স টেকনিক শিখুন প্রাকটিক্যাল লেসন ও রিয়েল প্রজেক্টের মাধ্যমে। এক প্ল্যাটফর্মে পাবেন একাধিক কোর্স, আধুনিক ওয়ার্কফ্লো এবং ক্যারিয়ার-রেডি স্কিল।
+                </p>
+
+                <a href="#" class="btn-primary">এনরোল করুন</a>
+            </div>
+
+            <!-- Right Side Image (Demo/White Placeholder) -->
+            <div class="hero-image-area">
+
+                <!-- Replaced Image with White Placeholder Box -->
+            </div>
+
         </div>
-      </div>
+
+        <!-- WhatsApp Floating Icon -->
+        <a href="#" class="whatsapp-float">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="notification-badge">1</span>
+        </a>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Learn more</p>
-      <h1 class="title">About me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/amir.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>4+ years <br />graphic Design/video editng</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Editing Experience</h3>
-              <p>Editing serves a purpose: tell a story and keep attention <br>
-Timeline basics: clips, tracks, playhead <br>
 
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I’m Amir Hamja, a Video Editor and Graphic Designer. I create clean, creative, and professional visual content through video editing, motion graphics, and graphic design, always focusing on client needs and quality results.
-If you want it even shorter, let me know 😊
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    <!-- //</section>
-    ""<section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section> -->
-    <section id="projects" class="amir">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      
-      <div class="slider-container">
-  <div class="slider" id="slider">
-    
-    <div class="slide">
-      <iframe src="https://www.youtube.com/embed/1XbvYP1qbgA"
-        allowfullscreen></iframe>
+
+
+
+    <!-- Logo Slider Section -->
+<div class="logo-slider">
+    <div class="slide-track">
+        <!-- 1. Original Set of Logos -->
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Coinbase_Wordmark.svg" alt="Coinbase"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify"></div>
+        <div class="slide"><img src="https://logo.clearbit.com/mindbodyonline.com" alt="Mindbody"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/MetLife_logo.svg" alt="MetLife"></div>
+        <div class="slide"><img src="https://logo.clearbit.com/ramp.com" alt="Ramp"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Marriott_International_logo_201X.svg" alt="Marriott"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma"></div>
+
+        <!-- 2. DUPLICATE Set of Logos (Required for the seamless infinite loop) -->
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Coinbase_Wordmark.svg" alt="Coinbase"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify"></div>
+        <div class="slide"><img src="https://logo.clearbit.com/mindbodyonline.com" alt="Mindbody"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/MetLife_logo.svg" alt="MetLife"></div>
+        <div class="slide"><img src="https://logo.clearbit.com/ramp.com" alt="Ramp"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Marriott_International_logo_201X.svg" alt="Marriott"></div>
+        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma"></div>
     </div>
-
-    <div class="slide">
-      <iframe src="https://www.youtube.com/embed/VPWDSHcfgE4"
-        allowfullscreen></iframe>
-    </div>
-
-    <div class="slide">
-      <iframe src="https://www.youtube.com/embed/U1Vqha6VQyg"
-        allowfullscreen></iframe>
-    </div>
-
-  </div>
-
-  <button class="prev" onclick="moveSlide(-1)">❮</button>
-  <button class="next" onclick="moveSlide(1)">❯</button>
 </div>
-
-<script>
-let index = 0;
-const slider = document.getElementById("slider");
-const slides = document.querySelectorAll(".slide");
-
-function moveSlide(step) {
-  index += step;
-
-  if (index < 0) index = slides.length - 1;
-  if (index >= slides.length) index = 0;
-
-  slider.style.transform = `translateX(-${index * 100}%)`;
-}
-</script>
+    
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ONLY copy this block into your existing HTML file -->
+<section class="courses-section">
+    <h2 class="section-title">My Courses</h2>
+
+    <div class="courses-grid">
+        
+        <!-- Card 1 -->
+        <div class="course-card">
+            <div class="card-header">
+                <div class="thumb-placeholder"></div>
+                <div class="avatar-placeholder"></div>
+            </div>
+            <div class="card-body">
+                <p class="instructor">Sayeed Fahad</p>
+                <h3 class="course-title">Video Editing with After Effects and Premiere Pro Batch 2</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="card-footer">
+                <div class="meta">
+                    <span><i class="icon">📄</i> 56</span>
+                    <span><i class="icon">👥</i> 131</span>
+                </div>
+                <div class="price">15,000.00৳</div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="course-card">
+            <div class="card-header">
+                <div class="thumb-placeholder"></div>
+                <div class="avatar-placeholder"></div>
+            </div>
+            <div class="card-body">
+                <p class="instructor">Sayeed Fahad</p>
+                <h3 class="course-title">Premier Pro Course (Recorded)</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="card-footer">
+                <div class="meta">
+                    <span><i class="icon">📄</i> 47</span>
+                    <span><i class="icon">👥</i> 61</span>
+                </div>
+                <div class="price">
+                    <span class="old-price">2,500.00৳</span>
+                    1,990.00৳
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="course-card">
+            <div class="card-header">
+                <div class="thumb-placeholder"></div>
+                <div class="avatar-placeholder"></div>
+            </div>
+            <div class="card-body">
+                <p class="instructor">Sayeed Fahad</p>
+                <h3 class="course-title">Basic Video Editing with Capcut (Recorded)</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="card-footer">
+                <div class="meta">
+                    <span><i class="icon">📄</i> 28</span>
+                    <span><i class="icon">👥</i> 460</span>
+                </div>
+                <div class="price">500.00৳</div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="course-card">
+            <div class="card-header">
+                <div class="thumb-placeholder"></div>
+                <div class="avatar-placeholder"></div>
+            </div>
+            <div class="card-body">
+                <p class="instructor">Sayeed Fahad</p>
+                <h3 class="course-title">Video Editing with After Effects and Premiere Pro Batch 1</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="card-footer">
+                <div class="meta">
+                    <span><i class="icon">📄</i> 74</span>
+                    <span><i class="icon">👥</i> 276</span>
+                </div>
+                <div class="price">4,999.00৳</div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="course-card">
+            <div class="card-header">
+                <div class="thumb-placeholder"></div>
+                <div class="avatar-placeholder"></div>
+            </div>
+            <div class="card-body">
+                <p class="instructor">Sayeed Fahad</p>
+                <h3 class="course-title">Video Editing with After Effects and Premiere Pro Batch 1</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="card-footer">
+                <div class="meta">
+                    <span><i class="icon">📄</i> 74</span>
+                    <span><i class="icon">👥</i> 276</span>
+                </div>
+                <div class="price">4,999.00৳</div>
+            </div>
+        </div>
+        <!-- Card 6  -->
+        <div class="course-card">
+            <div class="card-header">
+                <div class="thumb-placeholder"></div>
+                <div class="avatar-placeholder"></div>
+            </div>
+            <div class="card-body">
+                <p class="instructor">Sayeed Fahad</p>
+                <h3 class="course-title">Video Editing with After Effects and Premiere Pro Batch 1</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="card-footer">
+                <div class="meta">
+                    <span><i class="icon">📄</i> 74</span>
+                    <span><i class="icon">👥</i> 276</span>
+                </div>
+                <div class="price">4,999.00৳</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+ <section class="slider-2">
+        <h2>Student's Feedback</h2>
+
+        <div class="slider-container">
+            
+            <!-- Card 1 -->
+            <div class="feedback-card">
+                <div class="card-icon">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+                <p class="feedback-text">
+                    ক্লায়েন্ট ক্লোজ করতে এগিয়ে যেতে সাহায্য করেছে এই কোর্স। মেন্টর খুব সাপোর্টিভ।
+                </p>
+                <div class="user-profile">
+                    <!-- Image Placeholder -->
+                    <div class="user-img-placeholder" style="background-color: #ccc;"></div>
+                    <div class="user-info">
+                        <h4>Dihan</h4>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feedback-card">
+                <div class="card-icon">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+                <p class="feedback-text">
+                    এই কোর্সের প্রাইস ব্যাতিত কিছুই কম রেখেছেন বলে মনে করি না ভাই। আল্লাহ আপনাকে উত্তম জাজা দান করুন।
+                </p>
+                <div class="user-profile">
+                    <div class="user-img-placeholder" style="background-color: #bbb;"></div>
+                    <div class="user-info">
+                        <h4>মোঃ মিজান</h4>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feedback-card">
+                <div class="card-icon">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+                <p class="feedback-text">
+                    ভাই এক কথায় সেরা। আপনার মাধ্যমে অনেক কিছুই শিখতে পেরেছি। মন থেকে দোয়া ও ভালোবাসা রইলো।
+                </p>
+                <div class="user-profile">
+                    <div class="user-img-placeholder" style="background-color: #aaa;"></div>
+                    <div class="user-info">
+                        <h4>Md Abed Hossain</h4>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 (Added extra to demonstrate scrolling) -->
+            <div class="feedback-card">
+                <div class="card-icon">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+                <p class="feedback-text">
+                    মেন্টর হিসেবে আপনি অসাধারণ। ক্লাস গুলো প্রতিটা মুহূর্ত উপভোগ করার মতো ছিল।
+                </p>
+                <div class="user-profile">
+                    <div class="user-img-placeholder" style="background-color: #999;"></div>
+                    <div class="user-info">
+                        <h4>Md Rakib</h4>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <section class="about-section">
+        <!-- Main Title -->
+        <h2 class="about-title">About Me</h2>
+
+        <div class="about-content-wrapper">
+            
+            <!-- Left: White Demo Image Placeholder -->
+            <div class="about-image-placeholder">
+                <img src="/mehadi-1.jpg" alt="">
+            </div>
+
+            <!-- Right: Text Content -->
+            <div class="about-text">
+                <h3 class="about-name">Drew Mahadi</h3>
+                <div class="about-role">Video Editor | Instructor</div>
+                
+                <p class="about-description">
+                    This is Sayeed Fahad. I am a passionate video editor and mentor who believes in stories and empowering others through creative content. Equipped with hands-on experience in Adobe Premiere Pro, After Effects, and CapCut, I edit, craft, and design visuals that move people. Going forth with a client-first approach, I have had the privilege of working with well-known creators and brands such as Saqlain Khan, Nafees Salim, Runner Group, and BYD Bangladesh for the past years, editing pieces that have made remarkable impact.
+                </p>
+            </div>
+
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="portfolio-1">
+        <h2>Showreel</h2>
+
+        <!-- Video Container -->
+        <div class="video-wrapper">
+            
+            <!-- Video Player UI Overlay (Top Bar) -->
+            <div class="video-ui-top">
+                <div class="video-info-left">
+                    <div class="avatar-circle">e</div> <!-- 'e' for ear fFsuleman -->
+                    <div class="video-text">
+                        <h3><a href="#">Mehadi </a></h3>
+                        <span>ear suleman</span>
+                    </div>
+                </div>
+
+                <div class="video-actions-right">
+                    <div class="action-icon" title="Like">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="action-icon" title="Watch Later">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="action-icon" title="Share">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Placeholder (White/Grey Box) -->
+            <div class="video-placeholder">
+                <!-- Center Play Button -->
+                <div class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <!-- Optional Text to indicate it's a demo -->
+                <span style="position: absolute; bottom: 20px; color: #999; font-weight: 600;">
+                    VIDEO DEMO PLACEHOLDER
+                </span>
+            </div>
+
         </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </section>
+
+
+
+
+
+
+
+<!-- last section -->
+
+
+
+
+     <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Brand / Logo -->
+            <div class="footer-col-brand">
+                <a href="#" class="footer-logo">Drew Mahadi</a>
+                <p class="footer-desc">
+                    Transform your passion into skill with courses that teach video editing from basics to brilliance.
+                </p>
+                <div class="licence-text">
+                    <strong>Licence No:</strong> TRAD/DNCC/008721/2025
+                </div>
+            </div>
+
+            <!-- Column 2: Company Links -->
+            <div class="footer-col-links">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Become A Teacher</a></li>
+                    <li><a href="#">Become an Instructor</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Get In Touch -->
+            <div class="footer-col-contact">
+                <h3 class="footer-heading">Get In Touch</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-label">Address :</span>
+                        <span>Khulna</span>
+                    </li>
+                    <li>
+                        <span class="contact-label">Phone :</span>
+                        <span>+880 1580-672143</span>
+                    </li>
+                    <li>
+                        <span class="contact-label">Email :</span>
+                        <span>mehadi@gmail.com</span>
+                    </li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/drewmahadifb" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@drewmahadiyoutube" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
